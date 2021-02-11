@@ -11,7 +11,7 @@ class Delivery{
     while(!verified){
       System.out.println("Please input the day of the week you wish to have your groceries deliverd.");
       System.out.println("Monday, Tuesday, Wednesday, Thursday, Friday, Sat, Sunday");
-      switch(userIn.nextLine()){
+      switch(usrIn.nextLine()){
         case "Monday": day = "Monday"; verified = true; break;
         case "Tuesday": day = "Tuesday"; verified = true; break;
         case "Wednesday": day = "Wednesday"; verified = true; break;
@@ -30,7 +30,7 @@ class Delivery{
     while(!verified){
       System.out.println("Please input the time of day you wish to have your groceries deliverd.");
       System.out.println("Morning (8:00 AM), Midday (12:00 PM), Afternoon (4:00 PM), Evening (6:00 PM)");
-      switch(userIn.nextLine()){
+      switch(usrIn.nextLine()){
         case "Morning": time = "8:00 AM"; verified = true; break;
         case "Midday": time = "12:00 PM"; verified = true; break;
         case "Afternoon": time = "4:00 PM"; verified = true; break;
