@@ -21,6 +21,7 @@ class Ingredient implements Display{
   void setCost(double d){
     cost = d;
   }
+  //Implementation of Display
   public void showName(){
     System.out.println(name);
   }
