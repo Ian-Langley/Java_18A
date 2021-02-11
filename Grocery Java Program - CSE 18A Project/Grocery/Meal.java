@@ -1,16 +1,16 @@
 package Grocery;
 
-class Meal{
+class Meal implements Display{
   String mealName;
   String description;
   private int ingCount = 0;
   private double cost = 0.0;
   Ingredient ingredients[] = new Ingredient[ingCount];
 
-//Meal constructor, requires a preInitialized array;
-  Meal(String n, double c){
+//Meal constructor, ingrediants added post construction.
+  Meal(String n, String c){
     mealName = n;
-    cost = c;
+    description = c;
   }
 
   //Method to add an Ingrediant to the meal
@@ -30,5 +30,23 @@ class Meal{
     for(int i = 0; i < ingCount; i++){
       cost += ingredients[i].getCost();
     }
+  }
+
+
+
+
+  public void showName(){
+    System.out.println(mealName);
+  }
+  public void showCost(){
+    System.out.println("Costs :" + cost);
+  }
+  public void showDescription(){
+    System.out.println(description);
+  }
+  public void fullDisplay(){
+    showName();
+    showCost();
+    showDescription();
   }
 }
