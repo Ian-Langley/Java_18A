@@ -5,7 +5,7 @@ public class Meal implements Display{
   String mealName;
   String description;
   private int ingCount = 0;
-  double cost = 0.0;
+  private double cost = 0.0;
   Ingredient ingredients[] = new Ingredient[ingCount];
   //Meal constructor, ingrediants added post construction.
   public Meal(String n, String c){
@@ -23,7 +23,6 @@ public class Meal implements Display{
     ingredients = tempArray;
     calcCost();
   }
-
   //method to calculate total cost of meal based on ingrediants
   //Does not display, only sets cost. New method needs to be made
   public void calcCost(){
@@ -40,7 +39,7 @@ public class Meal implements Display{
     System.out.println("Name: " + mealName);
   }
   public void showCost(){
-    System.out.println("Costs: " + cost);
+    System.out.printf("Costs: $%.2f %n", cost);
   }
   public void showDescription(){
     System.out.print("Ingredients: ");
@@ -54,5 +53,9 @@ public class Meal implements Display{
     showCost();
     showDescription();
     System.out.println();
+  }
+  //Data access function
+  public double getCost(){
+    return cost;
   }
 }

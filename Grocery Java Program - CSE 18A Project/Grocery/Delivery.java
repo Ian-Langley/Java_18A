@@ -19,6 +19,13 @@ public class Delivery{
         case "Friday": day = "Friday"; verified = true; break;
         case "Saturday": day = "Saturday"; verified = true; break;
         case "Sunday": day = "Sunday"; verified = true; break;
+        case "monday": day = "Monday"; verified = true; break;
+        case "tuesday": day = "Tuesday"; verified = true; break;
+        case "wednesday": day = "Wednesday"; verified = true; break;
+        case "thursday": day = "Thursday"; verified = true; break;
+        case "friday": day = "Friday"; verified = true; break;
+        case "saturday": day = "Saturday"; verified = true; break;
+        case "sunday": day = "Sunday"; verified = true; break;
         default:
           System.out.println("The Day you entered does not match our options.");
       }
@@ -36,6 +43,10 @@ public class Delivery{
         case "Midday": time = "12:00 PM"; verified = true; break;
         case "Afternoon": time = "4:00 PM"; verified = true; break;
         case "Evening": time = "6:00 PM"; verified = true; break;
+        case "morning": time = "8:00 AM"; verified = true; break;
+        case "midday": time = "12:00 PM"; verified = true; break;
+        case "afternoon": time = "4:00 PM"; verified = true; break;
+        case "evening": time = "6:00 PM"; verified = true; break;
         default:
           System.out.println("The time you entered does not match our options.");
       }
