@@ -1,24 +1,24 @@
 package Grocery;
-class Ingredient implements Display{
+public class Ingredient implements Display{
   //Base Variables
   private String name;
   private double cost;
   //Constructor
-  Ingredient(String s, double d){
+  public Ingredient(String s, double d){
     name = s;
     cost = d;
   }
   //Data Acces Methods
-  String getName(){
+  public String getName(){
     return name;
   }
-  void setName(String s){
-    name = s;
-  }
-  double getCost(){
+  public double getCost(){
     return cost;
   }
-  void setCost(double d){
+  public void setName(String s){
+    name = s;
+  }
+  public void setCost(double d){
     cost = d;
   }
   //Implementation of Display
